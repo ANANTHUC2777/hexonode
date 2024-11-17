@@ -1,0 +1,57 @@
+@use "variables" as *;
+@font-face {
+  font-family: 'Mulish-Bold';
+  src: url('../fonts/Mulish-Bold.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mulish-Regular';
+  src: url('../fonts/Mulish-Regular.ttf');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mulish-SemiBold';
+  src: url('../fonts/Mulish-SemiBold.ttf');
+  font-display: swap;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.container {
+  max-width: 132rem;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}

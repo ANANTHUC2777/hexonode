@@ -1,0 +1,38 @@
+@use "variables" as *;
+.side-Nav {
+  height: 100vh;
+  background: #ffffff;
+  position: fixed;
+  right: 0;
+  width: 0;
+  z-index: 99999;
+  transition: all 1s ease-in-out;
+}
+.invisible {
+  visibility: hidden;
+}
+.side-Nav--width {
+  width: 100%;
+}
+.aside-menu {
+  li {
+    padding: 1rem;
+  }
+}
+.close {
+  color: $hex-red !important;
+  display: block !important;
+  font-size: 2.4rem;
+  font-family: $hex-bold-font;
+  padding-bottom: 2rem;
+  line-height: 1.3;
+  max-width: 80rem;
+  font-weight: 700;
+  color: $hex-black;
+  text-align: right;
+}
+@media screen and (min-width: 1200px) {
+  aside {
+    display: none;
+  }
+}

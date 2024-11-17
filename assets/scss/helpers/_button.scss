@@ -1,0 +1,23 @@
+@use 'variables' as *;
+.theme__btn{
+    background-color:$hex-red;
+    border-radius: 0.3rem;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 1.7rem;
+    font-family: $hex-reg-font;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 21rem;
+    color: $hex-white;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: $hex-hover-red;
+    }
+}
